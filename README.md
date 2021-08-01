@@ -7,11 +7,11 @@ With the webcam capturing the video, the frames are preprocessed and and fed to 
 wearing/removing mask and display of prediction.
 
 * I have used 2 methods to detect mask in live video stream.
-   1. In the first method I have used just OpenCV to define a Region Of Interest (ROI) and the model detects the presence or absence of mask on aperson's face if the person's    face is in the ROI.
-   2. In the second method I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
+   * 1. In the first method I have used just OpenCV to define a Region Of Interest (ROI) and the model detects the presence or absence of mask on aperson's face if the person's face is in the ROI.
+   * 2. In the second method I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
 
 
-## Working using 1st method:
+## Working using method 'a' :
 
 ### No Mask
 
@@ -21,7 +21,7 @@ wearing/removing mask and display of prediction.
 
 ![image](mask1.png)
 
-## Working using 2nd method:
+## Working using method 'b' :
 
 ### No Mask
 
@@ -64,7 +64,7 @@ STEPS USED:
 
 2- Training the COVID-19 face mask detector with Keras/TensorFlow
 
-3 - Implementing our COVID-19 face mask detector for images with OpenCV
+3 - Implementing our COVID-19 face mask detector for images
 
 4 - COVID-19 face mask detection in images with OpenCV
 
@@ -84,7 +84,7 @@ SUMMARY/RESULT
 
 Future Scope
 ------------
-Can be used in CCTV cameras for capturing wide peoples or group of peoples
+Can be used in CCTV cameras for a group of people.
 
 Can be improved for further as per requirements.
 
