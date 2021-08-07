@@ -36,7 +36,7 @@ wearing/removing mask and display of prediction.
 
 ## Dataset
 
-* I used OpenCV to capture my own images to create a dataset of train and test images
+* I have used OpenCV to capture my own images to create a dataset of train and test images
 
 **COVID-19 face mask detector:::::**
 
