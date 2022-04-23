@@ -1,14 +1,14 @@
 # COVID-19 Face-Mask Detector
-Real time face-mask detection using Deep Learning and OpenCV
+Real-time face-mask detection using Deep Learning and OpenCV
 
 ## About Project
-* This project uses a Deep Neural Network, more specifically a Convolutional Neural Network, to differentiate between images of people with and without masks. The CNN manages to get an accuracy of **98.72 % on the test set**. Then the stored weights of this CNN are used to classify as mask or no mask, in real time, using OpenCV.
-With the webcam capturing the video, the frames are preprocessed and and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between
-wearing/removing mask and display of prediction.
+* This project uses a Deep Neural Network, specifically a Convolutional Neural Network, to differentiate between images of people with and without masks. The CNN manages to get an accuracy of **98.72 % on the test set**. Then the stored weights of this CNN are used to classify as a Mask or no mask in real-time, using OpenCV.
+With the webcam capturing the video, the frames are preprocessed and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between
+wearing/removing Mask and display of prediction.
 
-* I have used 2 methods to detect mask in live video stream.
-   * 1. In the first method I have used just OpenCV to define a Region Of Interest (ROI) and the model detects the presence or absence of mask on aperson's face if the person's face is in the ROI.
-   * 2. In the second method I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
+* I have used 2 methods to detect Mask in a live video stream.
+   * 1. In the first method, I have used just OpenCV to define a Region Of Interest (ROI), and the model detects the presence or absence of a Mask on a person's face if the person's face is in the ROI.
+   * 2. In the second method, I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
 
 
 ## Working using method 'a' :
@@ -36,16 +36,16 @@ wearing/removing mask and display of prediction.
 
 ## Dataset
 
-* I have used OpenCV to capture my own images to create a dataset of train and test images
+* I have used OpenCV to capture my images to create a dataset of train and test images
 
 **COVID-19 face mask detector:::::**
 
 ![image](https://user-images.githubusercontent.com/41515202/94375426-27f00a00-0131-11eb-82ac-11e28d0b0d95.png)
 
-* In order to train a custom face mask detector, we need to break our project into two distinct phases, each with its own respective sub-steps (as shown by Figure 1 above):::::
+* To train a custom face mask detector, we need to break our project into two distinct phases, each with its respective sub-steps (as shown in Figure 1 above):::::
 
-* **Training**: Here we’ll focus on loading our face mask detection dataset from disk, training a model (using Keras/TensorFlow) on this dataset, and then serializing the face mask detector to disk.
-* **Deployment**: Once the face mask detector is trained, we can then move on to loading the mask detector, performing face detection, and then classifying each face as with_mask or without_mask.
+* **Training**: We'll focus on loading our face mask detection dataset from disk, training a model (using Keras/TensorFlow) on this dataset, and then serializing the face mask detector to disk.
+* **Deployment**: Once the face mask detector is trained, we can then move on to loading the mask detector, performing face detection, and classifying each face as with_mask or without_mask.
 
 
 PROCESS REQUIRED:
@@ -76,15 +76,14 @@ STEPS USED:
 
 SUMMARY/RESULT
 ---------------
-* Developed detection Model with 98.72% accuracy, automatically detects if a person is wearing mask or not.
+* Developed detection Model with 98.72% accuracy, automatically detects if a person is wearing a mask or not.
 
-* Define a ROI .
+* Define an ROI.
 
-* Determined the class label encoding based on probabilities associated with color annotation
+* Determined the class label encoding based on probabilities associated with the color annotation
 
 Future Scope
 ------------
 Can be used in CCTV cameras for a group of people.
 
-Can be improved for further as per requirements.
-
+Can be improved further as per requirements.
