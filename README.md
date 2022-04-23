@@ -38,6 +38,8 @@ wearing/removing Mask and display of prediction.
 
 * I have used OpenCV to capture my images to create a dataset of train and test images
 
+## Block Diagram
+
 **COVID-19 face mask detector:**
 
 ![image](https://user-images.githubusercontent.com/41515202/94375426-27f00a00-0131-11eb-82ac-11e28d0b0d95.png)
