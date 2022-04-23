@@ -38,7 +38,7 @@ wearing/removing Mask and display of prediction.
 
 * I have used OpenCV to capture my images to create a dataset of train and test images
 
-**COVID-19 face mask detector:::::**
+**COVID-19 face mask detector:**
 
 ![image](https://user-images.githubusercontent.com/41515202/94375426-27f00a00-0131-11eb-82ac-11e28d0b0d95.png)
 
@@ -60,9 +60,9 @@ PROCESS REQUIRED:
 
 STEPS USED:
 -----------------------------------------------------------
-1 - Implementing our COVID-19 face mask detector training script with Keras and TensorFlow::::::::
+1 - Implementing our COVID-19 face mask detector training script with Keras and TensorFlow
 
-2- Training the COVID-19 face mask detector with Keras/TensorFlow
+2 - Training the COVID-19 face mask detector with Keras/TensorFlow
 
 3 - Implementing our COVID-19 face mask detector for images
 
