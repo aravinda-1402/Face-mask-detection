@@ -7,8 +7,9 @@ With the webcam capturing the video, the frames are preprocessed and fed to the 
 wearing/removing Mask and display of prediction.
 
 * I have used 2 methods to detect Mask in a live video stream.
-   * 1. In the first method, I have used just OpenCV to define a Region Of Interest (ROI), and the model detects the presence or absence of a Mask on a person's face if the person's face is in the ROI.
-   * 2. In the second method, I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
+   * 1. In the first method, I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
+   * 2. In the second method, I have used just OpenCV to define a Region Of Interest (ROI), and the model detects the presence or absence of a Mask on a person's face if the person's face is in the ROI.
+  
 
 
 ## Working using method 'a' :
