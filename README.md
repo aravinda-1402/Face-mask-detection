@@ -1,4 +1,4 @@
-# COVID-19 Face-Mask Detector😷
+# COVID-19 Face-Mask Detector 😷
 🦠 Real-time face-mask detection using Deep Learning and OpenCV
 
 ## About Project
