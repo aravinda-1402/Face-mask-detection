@@ -1,92 +1,58 @@
-# COVID-19 Face-Mask Detector
-Real-time face-mask detection using Deep Learning and OpenCV
+# COVID-19 Face-Mask Detector😷
+🦠 Real-time face-mask detection using Deep Learning and OpenCV
 
 ## About Project
-* This project uses a Deep Neural Network, specifically a Convolutional Neural Network, to differentiate between images of people with and without masks. The CNN manages to get an accuracy of **98.72 % on the test set**. Then the stored weights of this CNN are used to classify as a Mask or no mask in real-time, using OpenCV.
-With the webcam capturing the video, the frames are preprocessed and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between
-wearing/removing Mask and display of prediction.
+* This project uses a Deep Neural Network, specifically a Convolutional Neural Network, to differentiate between images of people with and without masks. The CNN manages to achieve an accuracy of **98.72% on the test set**. Then the stored weights of this CNN are used to classify as a Mask or no mask in real-time, using OpenCV. With the webcam capturing the video, the frames are preprocessed and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between wearing/removing Mask and display of prediction.
 
 * I have used 2 methods to detect Mask in a live video stream.
    * 1. In the first method, I have used HaarCascades to detect the face/faces and then predict if a person is wearing a mask or not.
    * 2. In the second method, I have used just OpenCV to define a Region Of Interest (ROI), and the model detects the presence or absence of a Mask on a person's face if the person's face is in the ROI.
-  
 
-
-## Working using method 'a' :
-
+## Working using method 'a':
 ### No Mask
-
-![image](nomask1.png)
-
+![No Mask](nomask1.png)
 ### With Mask
+![With Mask](mask1.png)
 
-![image](mask1.png)
-
-## Working using method 'b' :
-
+## Working using method 'b':
 ### No Mask
-
-![image](nomask.png)
-
+![No Mask](nomask.png)
 ### With Mask
-
-![image](mask.png)
-
-
-
+![With Mask](mask.png)
 
 ## Dataset
-
-* I have used OpenCV to capture my images to create a dataset of train and test images
+* I have used OpenCV to capture my images to create a dataset of train and test images.
 
 ## Block Diagram
+🔲 **COVID-19 face mask detector:**
+![Block Diagram](https://user-images.githubusercontent.com/41515202/94375426-27f00a00-0131-11eb-82ac-11e28d0b0d95.png)
 
-**COVID-19 face mask detector:**
-
-![image](https://user-images.githubusercontent.com/41515202/94375426-27f00a00-0131-11eb-82ac-11e28d0b0d95.png)
-
-* To train a custom face mask detector, we need to break our project into two distinct phases, each with its respective sub-steps (as shown in Figure 1 above):::::
+* To train a custom face mask detector, we need to break our project into two distinct phases, each with its respective sub-steps (as shown in Figure 1 above):
 
 * **Training**: We'll focus on loading our face mask detection dataset from disk, training a model (using Keras/TensorFlow) on this dataset, and then serializing the face mask detector to disk.
 * **Deployment**: Once the face mask detector is trained, we can then move on to loading the mask detector, performing face detection, and classifying each face as with_mask or without_mask.
 
-
-PROCESS REQUIRED:
------------------------
+### PROCESS REQUIRED:
 * Data extraction
 * Building the Dataset class
 * Building our face mask detector model
 * Training our model
-* Testing our model on real data -> IMAGE/VIDEO
+* Testing our model on real data (IMAGE/VIDEO)
 * Results
 
+### STEPS USED:
+1. Implementing our COVID-19 face mask detector training script with Keras and TensorFlow
+2. Training the COVID-19 face mask detector with Keras/TensorFlow
+3. Implementing our COVID-19 face mask detector for images
+4. COVID-19 face mask detection in images with OpenCV
+5. Implementing our COVID-19 face mask detector in real-time video streams with OpenCV
+6. Detecting COVID-19 face masks with OpenCV in real-time Video Streams
 
-STEPS USED:
------------------------------------------------------------
-1 - Implementing our COVID-19 face mask detector training script with Keras and TensorFlow
-
-2 - Training the COVID-19 face mask detector with Keras/TensorFlow
-
-3 - Implementing our COVID-19 face mask detector for images
-
-4 - COVID-19 face mask detection in images with OpenCV
-
-5 - Implementing our COVID-19 face mask detector in real-time video streams with OpenCV
-
-6 - Detecting COVID-19 face masks with OpenCV in real-time Video Streams 
-
-
-
-SUMMARY/RESULT
----------------
+### SUMMARY/RESULT
 * Developed detection Model with 98.72% accuracy, automatically detects if a person is wearing a mask or not.
-
 * Define an ROI.
-
 * Determined the class label encoding based on probabilities associated with the color annotation
 
-Future Scope
-------------
-Can be used in CCTV cameras for a group of people.
-
-Can be improved further as per requirements.
+## Future Scope
+* Can be used in CCTV cameras for a group of people.
+* Can be improved further as per requirements.
